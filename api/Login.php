@@ -6,7 +6,7 @@
 	$firstName = "";
 	$lastName = "";
 
-  // Replace with host name, database username, database password, and database name respectively
+  	// Replace with host name, database username, database password, and database name respectively
 	$conn = new mysqli("{host}", "{username}", "{password}", "{database}"); 	
 	if( $conn->connect_error )
 	{
