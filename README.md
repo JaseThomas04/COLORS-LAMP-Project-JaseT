@@ -45,12 +45,8 @@ Setup Instructions
   - To create the database, you run these commands (replace {database_name} with a string for the name, ex: {database_name} = colormanager):
           create database {database_name}; 
           use {database_name};
-  - To create the database tables, copy and run everything below while connected to database. Separate by the lines, so 5 copy-and-pastes
+  - To create the database tables, copy and run everything below while connected to database. Separate by the lines, so 3 copy-and-pastes
 
-          CREATE TABLE `{database_name}`.`Users` ( `ID` INT NOT NULL AUTO_INCREMENT , `FirstName`
-              VARCHAR(50) NOT NULL DEFAULT '' , `LastName` VARCHAR(50) NOT NULL DEFAULT '' , `Login`
-              VARCHAR(50) NOT NULL DEFAULT '' , `Password` VARCHAR(50) NOT NULL DEFAULT '' ,
-              PRIMARY KEY (`ID`)) ENGINE = InnoDB;
       ----------------------------------------------------------------------------------------------
           CREATE TABLE `{database_name}`.`Users`
           (
@@ -62,10 +58,6 @@ Setup Instructions
               PRIMARY KEY (`ID`)
           ) ENGINE = InnoDB;
       ----------------------------------------------------------------------------------------------
-          CREATE TABLE `{database_name}`.`Colors` ( `ID` INT NOT NULL AUTO_INCREMENT , `Name`
-              VARCHAR(50) NOT NULL DEFAULT '' , `UserID` INT NOT NULL DEFAULT '0' , PRIMARY KEY
-              (`ID`)) ENGINE = InnoDB;
-      ----------------------------------------------------------------------------------------------
           CREATE TABLE `{database_name}`.`Colors`
           (
               `ID` INT NOT NULL AUTO_INCREMENT ,
@@ -74,7 +66,7 @@ Setup Instructions
               PRIMARY KEY (`ID`)
           ) ENGINE = InnoDB;
       ----------------------------------------------------------------------------------------------
-          CREATE TABLE `COP4331`.`Contacts`
+          CREATE TABLE `{database_name}`.`Contacts`
           (
               `ID` INT NOT NULL AUTO_INCREMENT ,
               `FirstName` VARCHAR(50) NOT NULL DEFAULT '' ,
