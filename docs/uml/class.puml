@@ -1,0 +1,34 @@
+@startuml class
+class Users {
+  -ID : int
+  -FirstName : String
+  -LastName : String
+  -Login : String
+  -Password : String
+  --
+  +login(username : String, password : String) : void
+  +logout() : void
+}
+
+class Colors {
+  -ID : int
+  -Name : String
+  -UserID : int
+  --
+  +addColor(userId : int, color : String) : void
+  +searchColor(userId : int, search : String) : List<String>
+}
+
+class Contacts {
+  -ID : int
+  -FirstName : String
+  -LastName : String
+  -Phone : String
+  -Email : String
+  -UserID : int
+}
+
+Users "1" -- "0..*" Colors : UserID
+Users "1" -- "0..*" Contacts : UserID
+
+@enduml
