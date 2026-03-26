@@ -1,0 +1,33 @@
+@startuml use-case diagram
+left to right direction
+
+actor User
+
+rectangle "Color Management System" {
+  usecase "Log In" as Login
+  usecase "Search Color" as Search
+  usecase "Add Color" as Add
+  usecase "Log Out" as Logout
+}
+
+User -- Login
+User -- Search
+User -- Add
+User -- Logout
+
+note right of Search
+Precondition:
+User is logged in
+end note
+
+note right of Add
+Precondition:
+User is logged in
+end note
+
+note right of Logout
+Precondition:
+User is logged in
+end note
+
+@enduml
