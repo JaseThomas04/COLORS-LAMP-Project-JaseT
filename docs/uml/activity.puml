@@ -1,0 +1,35 @@
+@startuml activity
+start
+
+:Open login page;
+:Enter username and password;
+:Click Log In;
+
+if (Credentials correct?) then (yes)
+  :Open color page;
+
+  repeat
+    :Choose an action;
+
+    if (Search Color?) then (yes)
+      :Enter color name;
+      :Search color;
+      :Show result;
+    elseif (Add Color?) then (yes)
+      :Enter new color;
+      :Add color;
+      :Show confirmation;
+    else (Log Out)
+      :Log out;
+    endif
+
+  repeat while (User not logged out?) is (yes)
+
+  :Return to login page;
+
+else (no)
+  :Show login error;
+endif
+
+stop
+@enduml
