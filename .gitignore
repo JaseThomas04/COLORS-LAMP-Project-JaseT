@@ -1,1 +1,29 @@
+# Node dependencies
+node_modules/
 
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Generated lint reports (if any)
+*.log
+eslint-report.*
+stylelint-report.*
+htmlhint-report.*
+
+# Temporary files
+*.tmp
+*.swp
