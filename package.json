@@ -1,0 +1,35 @@
+{
+  "name": "colors-lamp-project-jaset",
+  "version": "1.0.0",
+  "description": "Running a LAMP Stack on Digital Ocean to query and insert data into a SQL database; Build a domain that connects frontend to backend with API",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "lint:js": "eslint \"public/**/*.js\"",
+    "lint:css": "stylelint \"public/**/*.css\"",
+    "lint:html": "htmlhint \"public/**/*.html\"",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaseThomas04/COLORS-LAMP-Project-JaseT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JaseThomas04/COLORS-LAMP-Project-JaseT/issues"
+  },
+  "homepage": "https://github.com/JaseThomas04/COLORS-LAMP-Project-JaseT#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0",
+    "globals": "^17.4.0",
+    "htmlhint": "^1.9.2",
+    "stylelint": "^17.6.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
