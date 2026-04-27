@@ -10,7 +10,9 @@
     "lint:js": "eslint \"public/**/*.js\"",
     "lint:css": "stylelint \"public/**/*.css\"",
     "lint:html": "htmlhint \"public/**/*.html\"",
-    "lint": "npm run lint:js && npm run lint:css && npm run lint:html"
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
+    "test": "jest",
+    "ci": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,8 @@
     "eslint": "^10.2.0",
     "globals": "^17.4.0",
     "htmlhint": "^1.9.2",
+    "jest": "^30.3.0",
+    "jsdom": "^29.1.0",
     "stylelint": "^17.6.0",
     "stylelint-config-standard": "^40.0.0"
   }
